@@ -1,0 +1,145 @@
+@media screen and (max-width : 1200px){
+  .contaniner {
+    max-width: 960px;
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.375rem;
+  --h3-font-size: 1.25rem;
+  --largest-font-size: 1.25rem;
+  --larger-font-size: 1.125rem;
+  --large-font-size: 0.9375rem;
+  --normal-font-size: 0.8675rem;
+  }
+
+  .contaniner {
+    max-width: 720px;
+  }
+
+  .btn {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .nav {
+    height: var(--heder-height);
+  }
+
+  .nav__logo-img,
+  .footer__logo-img {
+    width: 140px;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 100%;
+    inset-inline: 0.75rem;
+    background-color: var(--title-color);
+    max-height: 0;
+    overflow: scroll;
+    transition: 0.3s var(--transition);
+  }
+
+  .show-menu {
+    max-height: 220px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+    padding: 0.5rem 1.25rem;
+  }
+
+  .nav__link {
+    color: var(--bg-color);
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .home__btns {
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .about__grid,
+  .menu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__grid,
+  .reservation__form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offer__title {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width : 768px){
+  .contaniner {
+    max-width: 540px;
+  }
+
+  .offer__item {
+    grid-template-columns: 1fr;
+  }
+
+  .offer__img-wrapper {
+    margin-right: 0;
+  }
+
+  .offer__img {
+    vertical-align: middle;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width : 576px) {
+
+
+.about__img-wrapper {
+  padding-left: 1rem;
+}
+
+.about__img-wrapper::before {
+  bottom: -0.625rem;
+}
+
+.menu__item,
+.gallery__grid,
+.reservation__form {
+  grid-template-columns: 1fr;
+}
+
+.menu__img-wrapper {
+  width: 60px;
+  height: 60px;
+  padding: 2px;
+}
+
+}
+
+@media screen and (max-width : 350px) {
+  .reservation {
+    padding: 1.5rem 1.25rem;
+  } 
+}
